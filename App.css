@@ -1,0 +1,151 @@
+/* 应用整体样式 */
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  color: #333;
+}
+
+/* 头部区域 */
+.app-header {
+  text-align: center;
+  padding: 60px 20px 40px;
+  color: white;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.app-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 内容区域 */
+.app-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px 60px;
+  gap: 40px;
+}
+
+/* 打开弹窗按钮 */
+.open-modal-btn {
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.open-modal-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(255, 107, 107, 0.5);
+}
+
+.open-modal-btn:active {
+  transform: translateY(0);
+}
+
+/* 功能特点列表 */
+.feature-list {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.feature-list h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  color: #333;
+  text-align: center;
+}
+
+.feature-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  padding: 8px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.feature-list li::before {
+  margin-right: 8px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  
+  .app-header p {
+    font-size: 1rem;
+  }
+  
+  .app-content {
+    padding: 0 16px 40px;
+    gap: 30px;
+  }
+  
+  .open-modal-btn {
+    padding: 14px 28px;
+    font-size: 16px;
+    min-width: 180px;
+  }
+  
+  .feature-list {
+    padding: 24px;
+    margin: 0 16px;
+  }
+  
+  .feature-list h3 {
+    font-size: 1.2rem;
+  }
+  
+  .feature-list li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    padding: 40px 16px 30px;
+  }
+  
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .open-modal-btn {
+    padding: 12px 24px;
+    font-size: 15px;
+    min-width: 160px;
+  }
+  
+  .feature-list {
+    padding: 20px;
+  }
+}

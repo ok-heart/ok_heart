@@ -1,0 +1,40 @@
+{
+  "name": "react-modal-component",
+  "version": "1.0.0",
+  "description": "一个适配性强的React弹窗组件，支持背景图片和红包券列表",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [
+    "react",
+    "modal",
+    "popup",
+    "responsive",
+    "component",
+    "红包券",
+    "弹窗"
+  ],
+  "author": "Frontend Developer",
+  "license": "MIT"
+}
